@@ -1,0 +1,153 @@
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 1em/1.4 Cambria, Georgia, sans-serif;
+    color: #333;
+    background: #fff;
+    padding-top: 1em;
+}
+
+#container {
+    max-width: 500px;
+    padding: 30px 0 50px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1em 0 0;
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+    font-color: black padding-bottom: 1em;
+}
+
+h5 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.bubble {
+    padding-top: 1.5em;
+}
+
+
+/*Clearfix*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/*Navigation*/
+
+.logo {
+    position: absolute;
+    height: 3em;
+    padding-top: .2em;
+    padding-left: 15em;
+}
+
+hr.style1 {
+    border-top: 1px solid black;
+    width: 700px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6em;
+    padding-top: 1em;
+    font-size: .95em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+}
+
+nav ul a {
+    color: #c52470;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+
+nav ul a:hover {
+    color: #ec5311;
+}
+
+nav ul li {
+    display: flex;
+    flex: 1 1 auto;
+    color: #c52470;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 90%;
+        text-align: center;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #container {
+        width: 90%;
+        text-align: center;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }
+    @media screen and (max-width: 360px) {
+        #container {
+            max-width: 90%;
+            text-align: center;
+        }
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    }
+    /* Social Media */
+    .divider {
+        font-color: #c52470;
+        width: 30px;
+        border-radius: 5px;
+        height: auto;
+        display: inline-block;
+    }
+    .fa {
+        font-color: #c52470;
+        color: #c52470;
+    }
+    .fa:hover {
+        color: #ec5311;
+    }
