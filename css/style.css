@@ -26,11 +26,11 @@ body {
     padding: 0;
     margin: 0;
     background-color: white;
-    color: #333333;
+    color: #000;
     font-family: 'Oswald', sans-serif;
     line-height: 1.6em;
     padding-top: 1em;
-    font-size: .95em;
+    font-size: 1em;
 }
 
 .container {
@@ -50,12 +50,12 @@ body {
 }
 
 .onethird {
-    width: calc(100%/3);
+    width: 25%;
     padding: 1.5em;
 }
 
 .twothirds {
-    width: 66%;
+    width: 75%;
     font-size: 0.95em;
     padding: 2em;
 }
@@ -98,7 +98,7 @@ img {
 }
 
 img.me {
-    padding-top: 8em;
+    padding-top: 6em;
 }
 
 
@@ -110,15 +110,17 @@ img.me {
 }
 
 .logo {
-    position: absolute;
-    height: 3em;
-    padding-top: 1em;
-    padding-right: 5em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 35px;
+    width: auto;
 }
 
 hr.style1 {
     border-top: 1px solid black;
     width: 700px;
+    margin: auto;
 }
 
 nav {
@@ -150,36 +152,22 @@ nav ul li {
 }
 
 
-/* Social Media */
-
-.divider {
-    font-color: #c52470;
-    width: 30px;
-    border-radius: 5px;
-    height: auto;
-    display: inline-block;
-}
-
-.divider:hover {
-    color: #ec5311;
-}
-
-
 /*Responsive Design*/
 
 
 /*Navigation*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+only screen and (max-width: 768px) {
     nav {
         display: none;
     }
     .mobile {
         display: block;
     }
-
     hr {
-    	display: none;
+        display: none;
     }
     body {
         margin: 0;
@@ -270,12 +258,15 @@ nav ul li {
 
 /*Layout*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+only screen and (max-width: 768px) {
     .onethird,
     .twothirds {
         width: 100%;
         text-align: center;
         padding-bottom: 0em;
+        width: 80%;
     }
     img.me {
         padding-top: 1em;
@@ -286,5 +277,10 @@ nav ul li {
         padding: 0;
         margin: 0;
         border: 0;
+    }
+    .contact {
+        width: 66%;
+        font-size: 0.95em;
+        padding: 2em;
     }
 }
