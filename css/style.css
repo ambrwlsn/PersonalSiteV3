@@ -30,14 +30,17 @@ body {
     font-family: 'Oswald', sans-serif;
     line-height: 1.6em;
     padding-top: 1em;
-    font-size: 1em;
+    font-size: .95em;
+}
+
+.font {
+    font-family: 'Merriweather';
 }
 
 .container {
     max-width: 800px;
     margin: auto;
 }
-
 
 
 /*Layout*/
@@ -51,20 +54,20 @@ body {
 }
 
 .onethird {
-    width: 25%;
+    width: 26%;
     padding: 1.5em;
 }
 
 .twothirds {
-    width: 75%;
-    font-size: 0.95em;
+    width: 74%;
+    font-size: 0.8em;
     padding: 2em;
 }
 
 
 /*Text & Links*/
 
-h1 {
+h2 {
     padding-top: 0em;
     margin-top: 0em;
     color: #3d38db;
@@ -158,9 +161,7 @@ nav ul li {
 
 /*Navigation*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
-only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
-only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
     nav {
         display: none;
     }
@@ -259,15 +260,18 @@ only screen and (max-width: 768px) {
 
 /*Layout*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
-only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
-only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
+    
+h2 {
+    text-align: center;
+}
     .onethird,
     .twothirds {
         width: 100%;
-        text-align: center;
         padding-bottom: 0em;
-        width: 80%;
+        float: left;
+        text-align: justify;
+        font-size: 1em;
     }
     img.me {
         padding-top: 1em;
@@ -276,12 +280,12 @@ only screen and (max-width: 768px) {
     .logo {
         float: left;
         padding: 0;
-        margin: 0;
+        margin: 15px;
         border: 0;
     }
     .contact {
-        width: 66%;
-        font-size: 0.95em;
+        width: 100%;
+        font-size: 1.05em;
         padding: 2em;
     }
 }

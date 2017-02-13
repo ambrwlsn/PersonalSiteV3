@@ -31,11 +31,11 @@ body {
     font-family: 'Oswald', sans-serif;
     line-height: 1.6em;
     padding-top: 1em;
-    font-size: 1em;
+    font-size: .95em;
 }
 
 .container {
-    font: 1em/1.4 Cambria, Georgia, sans-serif;
+    font: 1em/1.4 'Merriweather', Georgia, sans-serif;
     max-width: 500px;
     margin: auto;
 }
@@ -120,9 +120,7 @@ nav ul li {
 
 /*Navigation*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
-only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
-only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
     nav {
         display: none;
     }
@@ -221,9 +219,7 @@ only screen and (max-width: 768px) {
 
 /*Layout*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
-only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
-only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
     .onethird,
     .twothirds {
         width: 100%;
