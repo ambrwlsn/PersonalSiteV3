@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
 /*Clearfix*/
 
 .cf:before,
@@ -13,7 +15,6 @@
 .cf {
     *zoom: 1;
 }
-
 
 /*General Style*/
 
@@ -33,67 +34,36 @@ body {
     font-size: .95em;
 }
 
-.portfolio {
-    font-size: 1.9em;
-    text-align: center;
-}
-
 .container {
-    display: -webkit-flex;
-   display: flex;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-flex-flow: column wrap;
-   flex-flow: column wrap;
-   -webkit-align-content: stretch;
-   align-content: stretch;
+    font: 1em/1.4 'Merriweather', Georgia, sans-serif;
+    max-width: 500px;
+    margin: auto;
 }
-
-/*Layout*/
-
-.portfolio {
-    background: #fff;
-    color: black;
-    }
-
-
-/*Text & Links*/
 
 h1 {
-    padding-top: 0em;
-    margin-top: 0em;
-    color: #3d38db;
+    margin: 1em 0 0;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+    font-color: black padding-bottom: 1em;
 }
 
-a {
-    color: #c52470;
-}
-
-a:hover {
-    color: #ec5311;
-}
-
-a.u-email {
-    color: #c52470;
-}
-
-a.u-email:hover {
-    color: #ec5311;
-}
-
-.contact {
-    padding: .3em;
+h5 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5em;
     text-align: center;
 }
 
-
-/*Images*/
-
-img {
-    max-width: 100%;
+.bubble {
+    padding-top: 1.5em;
 }
+
+small {
+    font-family: 'Oswald', sans-serif;
+}
+
+
 
 /*Navigation*/
 
@@ -114,7 +84,6 @@ hr.style1 {
     border-top: 1px solid black;
     width: 700px;
     margin: auto;
-    padding: 0;
 }
 
 nav {
@@ -151,9 +120,7 @@ nav ul li {
 
 /*Navigation*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
-only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
-only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
     nav {
         display: none;
     }
@@ -252,9 +219,7 @@ only screen and (max-width: 768px) {
 
 /*Layout*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
-only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
-only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
     .onethird,
     .twothirds {
         width: 100%;
@@ -266,12 +231,12 @@ only screen and (max-width: 768px) {
         padding-top: 1em;
         padding-bottom: none;
     }
-   .logo {
+    .logo {
         float: left;
         padding: 0;
         margin: 15px;
-        border: 0;}
-        
+        border: 0;
+    }
     .contact {
         width: 66%;
         font-size: 0.95em;
@@ -279,4 +244,33 @@ only screen and (max-width: 768px) {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        text-align: center;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }
+}
 
+@media screen and (max-width: 568px) {
+    .container {
+        width: 90%;
+        text-align: center;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }
+    @media screen and (max-width: 360px) {
+        .container {
+            max-width: 90%;
+            text-align: center;
+        }
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    }
