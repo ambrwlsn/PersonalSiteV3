@@ -58,37 +58,6 @@ body {
     color: black;
     }
 
-
-/*Text & Links*/
-
-h1 {
-    padding-top: 0em;
-    margin-top: 0em;
-    color: #3d38db;
-}
-
-a {
-    color: #c52470;
-}
-
-a:hover {
-    color: #ec5311;
-}
-
-a.u-email {
-    color: #c52470;
-}
-
-a.u-email:hover {
-    color: #ec5311;
-}
-
-.contact {
-    padding: .3em;
-    text-align: center;
-}
-
-
 /*Images*/
 
 img {
@@ -255,28 +224,8 @@ only screen and (max-width: 768px) {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
 only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
 only screen and (max-width: 768px) {
-    .onethird,
-    .twothirds {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 0em;
-        width: 80%;
-    }
-    img.me {
-        padding-top: 1em;
-        padding-bottom: none;
-    }
+
    .logo {
-        float: left;
-        padding: 0;
-        margin: 15px;
-        border: 0;}
-        
-    .contact {
-        width: 66%;
-        font-size: 0.95em;
-        padding: 2em;
-    }
+         margin: 15px;
+
 }
-
-
