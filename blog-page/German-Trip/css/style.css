@@ -65,7 +65,13 @@ small {
     text-align: center;
 }
 
+a {
+  color: #c52470;
+}
 
+a:hover {
+  color: #ec5311;
+}
 
 /*Navigation*/
 
