@@ -1,0 +1,581 @@
+/*Clearfix*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/*General Style*/
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6em;
+    padding-top: 1em;
+    font-size: .95em;
+}
+
+.home-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.blog-container {
+    font: 1em/1.4 'Merriweather', Georgia, sans-serif;
+    max-width: 600px;
+    line-height: 1.8em;
+    margin: auto;
+    font-size: 1em;
+    padding-bottom: 1em;
+    text-align: justify;
+}
+
+#words-container {
+    font: 1em/1.4 Cambria, Georgia, sans-serif;
+    color: #333;
+    background: #fff;
+    max-width: 500px;
+    padding: 0 0 50px;
+    margin: 0 auto;
+}
+
+.bubble {
+    padding-top: 1.5em;
+}
+
+
+.font {
+    font-family: 'Merriweather';
+}
+
+
+/* Home Page Layout*/
+
+.textright {
+    text-align: right;
+}
+
+.left {
+    float: left;
+}
+
+.onethird {
+    width: 26%;
+    padding: 1.5em;
+}
+
+.twothirds {
+    width: 74%;
+    font-size: 0.8em;
+    padding: 2em;
+}
+
+#Contact p {
+    line-height: .6em;
+}
+
+/*Blog-Page Layout*/
+
+.current-article {
+    padding-bottom: 2em;
+}
+
+/*~~~Text and Links*~~~/
+
+/*Homepage Headers*/
+
+h2 {
+    padding-top: 0em;
+    margin-top: 0em;
+    color: #3d38db;
+}
+
+/*Blog Headers*/
+
+h1 {
+    font-family: "Oswald";
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-family: "Oswald";
+}
+
+h1.portfolio-header {
+    font-family: "Oswald";
+    text-align: center;
+    padding-top: 1.5em;
+    line-height: .5em;
+    padding-bottom: 0;
+}
+
+h2.portfolio-description {
+  text-align: center;
+  font-size: .9em;
+  padding-top: 3em;
+  padding-bottom: 0;
+  margin: 0;
+  line-height: .4em;
+  color: black;
+}
+
+#words-container h1 {
+  font: 1em/1.4 Cambria, Georgia, sans-serif;
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding-top: .5em;
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    color: black;
+}
+
+#words-container h2{
+  font-size: 1em;
+    text-align: center;
+    padding-bottom: .5em;
+    margin-top: 0;
+    color: black;
+}
+
+h3.p-name {
+  font-size: .9em;
+	padding: 0;
+	margin: 0;
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+
+
+/*Text & Links*/
+
+a {
+    color: #c52470;
+}
+
+a:hover {
+    color: #ec5311;
+}
+
+a.u-email {
+    color: #c52470;
+}
+
+a.u-email:hover {
+    color: #ec5311;
+}
+
+.contact {
+    padding: .3em;
+    text-align: center;
+}
+
+a.article-link {
+    color: #c52470;
+}
+
+a.article-link:hover {
+    font-family: "Oswald";
+    color: #ec5311;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+
+/*Blog Page Stuff*/
+
+small {
+    color: #000;
+    font-size: .8em;
+}
+
+.p-name {
+  font-family: "Merriweather";
+  font-size: 1.1em;
+}
+
+.portfolio img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.more img {
+  width: 45%;
+  height: auto;
+  display: inline-block;
+  padding-bottom: 0.5em;
+}
+
+.morecontent span {
+    display: none;
+}
+
+.morelink {
+    display: block;
+    color: #c52470
+}
+
+.morelink:hover {
+    display: block;
+    color: #ec5311;
+}
+
+/*Speech Bubbles for Words Page*/
+
+.bubble {
+    position: relative;
+    padding: 15px;
+    margin: 1em 0 3em;
+    border: 5px solid #2F4F4F;
+    color: #333;
+    background: #fff;
+    /* css3 */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.bubble:before {
+  font-size: .8em;
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    border-width: 20px 20px 0;
+    border-style: solid;
+    border-color: #2F4F4F transparent;
+    display: block;
+    width: 0;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 47px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.bubbley {
+    position: relative;
+    padding: 15px;
+    margin: 1em 0 3em;
+    border: 5px solid #2F4F4F;
+    color: #333;
+    background: #fff;
+    /* css3 */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.bubbley:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 40px;
+    border-width: 20px 20px 0;
+    border-style: solid;
+    border-color: #2F4F4F transparent;
+    display: block;
+    width: 0;
+}
+
+.bubbley:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    right: 47px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+
+/*Images*/
+
+img {
+    max-width: 100%;
+}
+
+img.me {
+    padding-top: 6em;
+}
+
+/*Navigation*/
+
+.mobile, .menu {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 35px;
+    width: auto;
+    padding: 0
+}
+
+hr.style1 {
+    border-top: 1px solid black;
+    width: 700px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+}
+
+nav ul a {
+    color: #c52470;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+
+nav ul a:hover {
+    color: #ec5311;
+}
+
+nav ul li {
+    display: flex;
+    flex: 1 1 auto;
+    color: #c52470;
+}
+
+
+/*~~~Responsive Design~~~*/
+
+
+/*Navigation*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    hr {
+        display: none;
+    }
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    header {
+        width: 100%;
+        background: #3d38db;
+        height: 40px;
+        line-height: 60px;
+    }
+    .hamburger {
+        background: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 45px;
+        padding: 12px 15px 0px 15px;
+        color: #fff;
+        border: 0;
+        font-size: 1.9em;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 10000000000000;
+    }
+    .cross {
+        background: none;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 13px 18px 0px 15px;
+        color: #fff;
+        border: 0;
+        font-size: 3.5em;
+        line-height: 65px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 10000000000000;
+    }
+    .menu {
+        z-index: 1000000;
+        font-weight: bold;
+        font-size: 0.8em;
+        width: 100%;
+        background: white;
+        position: absolute;
+        text-align: center;
+    }
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none;
+    }
+    .menu li {
+        display: block;
+        padding: 15px 0 15px 0;
+        border-bottom: #3d38db 1px solid;
+    }
+    .menu li:hover {
+        display: block;
+        background: #181818;
+        padding: 15px 0 15px 0;
+        border-bottom: #3d38db 1px solid;
+    }
+    .menu ul li a {
+        text-decoration: none;
+        margin: 0px;
+        color: #c52470;
+    }
+    .menu ul li a:hover {
+        color: #ec5311;
+        text-decoration: none;
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+    }
+    .menu a:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/*Home Layout*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
+
+h2 {
+    text-align: center;
+}
+    .onethird,
+    .twothirds {
+        width: 100%;
+        padding-bottom: 0em;
+        float: left;
+        text-align: justify;
+        font-size: 1em;
+    }
+    img.me {
+        padding-left: 2.2em;
+        padding-top: 0;
+    }
+    .logo {
+float: left;
+
+        margin: 15px;
+        border: 0;
+    }
+    .contact {
+        width: 100%;
+        font-size: 1.05em;
+        padding: 2em;
+    }
+}
+
+/*Blog Layout*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
+  .logo {
+      float: left;
+      padding: 0;
+      margin: 15px;
+      border: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-container {
+        width: 90%;
+        text-align: justify;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .blog-container {
+        width: 90%;
+        text-align: justify;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }
+    @media screen and (max-width: 360px) {
+        .blog-container {
+            max-width: 90%;
+            text-align: justify;
+        }
+        img {
+            width: 90%;
+            height: 90%;
+        }
+        img.german-pictures {
+          text-align: justify;
+        }
+    }
+
+/*Words Bubble Layout*/
+
+@media screen and (max-width: 768px) {
+    #words-container {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #words-container {
+        width: 80%;
+        text-align: center;
+    }
+
+@media screen and (max-width: 360px) {
+    #words-container {
+        max-width: 90%;
+        text-align: center;
+    }
+}
